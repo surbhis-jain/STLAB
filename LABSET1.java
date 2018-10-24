@@ -71,7 +71,7 @@ class Triangle
 				break;
 			default : System.out.println("Invalid choice\n");
 		}
-
+		in.close();
 		}
 	}	
 }
