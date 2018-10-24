@@ -6,22 +6,22 @@ int main()
  lprice=45.0;
  sprice=30.0;
  bprice=25.0;
-tlocks=0;
+ tlocks=0;
  tstocks=0;
  tbarrels=0;
  printf("\nenter the number of locks and to exit the loop enter -1 for locks\n");
-scanf("%d", &locks);
+ scanf("%d", &locks);
  while(locks!=-1) {
  printf("enter the number of stocks and barrels\n"); scanf("%d%d",&stocks,&barrels);
-  tlocks=tlocks+locks;
+ tlocks=tlocks+locks;
  tstocks=tstocks+stocks;
  tbarrels=btarrels+barrels;
  printf("\nenter the number of locks and to exit the loop enter -1 for locks\n");
-scanf("%d",&locks);
+ scanf("%d",&locks);
  }
-printf("\ntotal locks = %d\”,tlocks);
+ printf("\ntotal locks = %d\n”,tlocks);
  printf(“total stocks =%d\n”,tstocks);
-printf(“total barrels =%d\n",tbarrels);
+ printf(“total barrels =%d\n",tbarrels);
  lsales = lprice*tlocks;
  ssales=sprice*tstocks;
  bsales=bprice*tbarrels;
@@ -32,12 +32,12 @@ printf(“total barrels =%d\n",tbarrels);
  comm=0.10*1000.0;
  comm=comm+0.15*800;
  comm=comm+0.20*(sales-1800.0);
-}
-else if(sales > 1000)
+ }
+ else if(sales > 1000)
  {
  comm =0.10*1000;
  comm=comm+0.15*(sales-1000);
-}
+ }
  else
  comm=0.10*sales;
  printf("the commission is=%f\n",comm);
